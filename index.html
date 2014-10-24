@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pie Chart</title>
+	<script src="bower_components/d3/d3.min.js" charset="utf-8"></script>
+	<script src="bower_components/d3.chart/d3.chart.min.js" charset="utf-8"></script>
+	<script src="d3.chart.pie.js" charset="utf-8"></script>
+</head>
+<body>
+
+<div id="pieChart"></div>
+<script>
+	var data = [
+      { label: 'Chevy', value: 10 },
+      { label: 'Ford', value: 15 },
+      { label: 'Toyota', value: 30 },
+      { label: 'Honda', value: 45 }
+    ],
+    pie = d3.select('#pieChart')
+      .append('svg')
+      .chart('Pie')
+      .height(400)
+      .innerRadius(100)
+      .width(400);
+
+    pie.draw(data);
+</script>
+</body>
+</html>

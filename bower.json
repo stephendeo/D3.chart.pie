@@ -1,0 +1,8 @@
+{
+  "name": "d3.chart.pie",
+  "description": "A pie chart using d3.chart.js library from the Misoproject",
+  "version": "0.1.0",
+  "dependencies": {
+    "d3.chart": "~0.2.1"
+  }
+}
